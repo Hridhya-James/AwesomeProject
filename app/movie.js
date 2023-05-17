@@ -56,10 +56,6 @@ const styles = StyleSheet.create({
   main: {
      width: '100%',
     height: 600,
-    //justifyContent:'center',
-    //alignItems:'center',
-    //justifyContent: 'space-between',
-    // backgroundColor:"red",
     padding:20,
     
   },
@@ -69,7 +65,6 @@ const styles = StyleSheet.create({
   },
   headerStyle: {
     flexDirection: "row",
-    // alignItems:"flex-start",
     justifyContent: 'space-between',
   },
   heading: {
@@ -78,24 +73,20 @@ const styles = StyleSheet.create({
     color:'white',
     alignItems:'center',
     justifyContent:'center',
-    // paddingHorizontal:"25%"
   },
   text:{
     fontSize: 14,
     color:'white',
     alignItems:'center',
     justifyContent:'center',
-    // paddingHorizontal:"25%"
   },
   head: {
     fontSize: 22,
     fontWeight: "bold",
     textDecorationLine:'underline'
-    //color:'white'
   },
   txt: {
     fontSize: 18,
-    // color: 'white',
   },
   img: {
     

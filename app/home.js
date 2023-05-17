@@ -129,12 +129,3 @@ const styles = StyleSheet.create({
 
   }
 });
-/*<Image source={item.Images} style={{
-              width:200,
-              height:200,
-              borderWidth:2,
-              borderColor:'#000000',
-              resizeMode:'stretch',
-              margin:8
-            }}></Image>
-            {item.Year}, {item.Rated} {item.Released}, {item.Runtime}, {item.Genre}, {item.Director}, {item.Writer}, {item.Actors}, {item.Plot}, {item.Language}, {item.Country}, {item.Awards}, {item.Metascore}, {item.imdbRating}, {item.imdbVotes}, {item.imdbID}, {item.Type}, {item.totalSeasons}, {item.Response},*/
