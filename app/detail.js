@@ -61,25 +61,7 @@ export default function App() {
        
 
     }
-    
-      
-      
-    
-    /*const SigninPage = ({ navigation }) => {
-      const [email, setEmail] = useState('');
-      const [password, setPassword] = useState('');
-      
-      const signIn = () => {                          
-          
-      
-          if (!strongRegex.test(email)) {
-              showMessage(MESSAGE.email)
-              return false;
-          } else if (password.length < 8) {
-              showMessage(MESSAGE.password);
-              return false;
-          }
-      }*/
+
     return (
      <View>
       <ImageBackground
