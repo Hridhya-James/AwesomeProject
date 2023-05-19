@@ -65,7 +65,7 @@ export default function Home() {
                   <Text numberOfLines={2}>{item.Plot}</Text>
                   <View style={styles.line}>
                     <Text>{item.Released}</Text>
-                    <Text>{item.imdbRating}</Text>
+                    <Text>⭐{item.imdbRating}</Text>
                     {/* <Text>{item.imdbRating}</Text> */}
                     <Text>{item.Runtime}</Text>
                   </View>

@@ -27,7 +27,7 @@ export default function movie() {
               <View>
                 <View style={styles.header}>
                   <Text style={styles.head}>Overview</Text>
-                  <Text style={{ color: '#000000' ,fontSize:19 ,fontWeight:'bold'}}>Rating: {item.imdbRating}</Text>
+                  <Text style={{ color: '#000000' ,fontSize:19 ,fontWeight:'bold'}}>⭐{item.imdbRating}</Text>
                 </View>
                 <Text style={styles.txt}>{item.Plot}</Text>
               </View>
