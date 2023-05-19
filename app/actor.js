@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     
     headerStyle: {
       flexDirection: "row",
-      // alignItems:"flex-start",
       justifyContent: 'space-between',
     },
     
@@ -46,11 +45,9 @@ const styles = StyleSheet.create({
       fontSize: 22,
       fontWeight: "bold",
       textDecorationLine:'underline'
-      //color:'white'
     },
     txt: {
       fontSize: 18,
-      // color: 'white',
     },
     img: {
       

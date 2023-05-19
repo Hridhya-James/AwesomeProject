@@ -31,7 +31,7 @@ export default function App() {
         console.log(username,password,confirmpassword)
         const strongRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
         
-        //const strongRegex =  reg [] ;
+        
         if (username === "" || password === "" || confirmpassword === "") {
           if(username === ""){
             alert('email address must be entered')

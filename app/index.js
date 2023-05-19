@@ -19,7 +19,7 @@ export default function Page() {
   const router = useRouter();
   const [text, onChangeText] = React.useState('');
   const [text1, onChangeText1] = React.useState('');
-  // const [text3, onChangeText3] = React.useState(0); 
+  
 
   useEffect(()=>{
     //getData()//
@@ -41,26 +41,23 @@ export default function Page() {
      // userobj = {username:'dfghj',password:'123456'}
      router.push("home")
 
-  // let userobj =await getData();
+   let userobj =await getData();
   
-  // console.log("",userobj,text,text1)
+   console.log("",userobj,text,text1)
     
-  //   if(text !== userobj?.username && text1 !== userobj?.password){
-  //     alert('Incorect Email and Password')     
-  //   }
-  //   else if(text.trim() !== userobj?.username){
-  //     alert('Incorect Email')
-  //   }
-  //   else if (text1 !== userobj?.password){
-  //     alert('Incorect Password')
-  //   }
-  //   else{
+     if(text !== userobj?.username && text1 !== userobj?.password){
+       alert('Incorect Email and Password')     
+     }
+    else if(text.trim() !== userobj?.username){
+      alert('Incorect Email')
+    }
+    else if (text1 !== userobj?.password){
+      alert('Incorect Password')
+    }
+    else{
       
-  //     router.push("home")
-  //   }
-    
-    
-    // onChangeText3(text3+1)
+      router.push("home")
+    }
     
   }
   return (
@@ -152,8 +149,6 @@ const styles = StyleSheet.create({
   },
   fixToText: {
     flexDirection: 'row',
-    //justifyContent: 'space-between',
-    //alignContent: "flex-end",
   },
   separator: {
     marginVertical: 8,

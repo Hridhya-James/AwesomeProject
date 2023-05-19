@@ -9,13 +9,13 @@ export default function movie() {
     console.log("fd", params)
     setTimeout(() => {
       onChangeitem(params)
-    }, 8000)
+    }, 2000)
 
   }, []);
   return (
-    <View style={{ flex: 1, backgroundColor: "#E100E1" }}>
+    <View style={{ flex: 1, backgroundColor: "#157DEC" }}>
       <ScrollView contentContainerStyle={{ flex: 1 }}>
-        <View style={{ backgroundColor: "#E100E1",flex:1,justifyContent:'center',alignContent:'center'}}>
+        <View style={{ backgroundColor: "#157DEC",flex:1,justifyContent:'center',alignContent:'center'}}>
           {/* {item} */}
           {(item) ?
             <View  style={styles.main}>
@@ -27,7 +27,7 @@ export default function movie() {
               <View>
                 <View style={styles.header}>
                   <Text style={styles.head}>Overview</Text>
-                  <Text style={{ color: '#000000' ,fontSize:19 ,fontWeight:'bold'}}>Rating: {item.imdbRating}</Text>
+                  <Text style={{ color: '#000000' ,fontSize:19 ,fontWeight:'bold'}}>⭐{item.imdbRating}</Text>
                 </View>
                 <Text style={styles.txt}>{item.Plot}</Text>
               </View>
@@ -56,10 +56,6 @@ const styles = StyleSheet.create({
   main: {
      width: '100%',
     height: 600,
-    //justifyContent:'center',
-    //alignItems:'center',
-    //justifyContent: 'space-between',
-    // backgroundColor:"red",
     padding:20,
     
   },
@@ -69,7 +65,6 @@ const styles = StyleSheet.create({
   },
   headerStyle: {
     flexDirection: "row",
-    // alignItems:"flex-start",
     justifyContent: 'space-between',
   },
   heading: {
@@ -78,24 +73,20 @@ const styles = StyleSheet.create({
     color:'white',
     alignItems:'center',
     justifyContent:'center',
-    // paddingHorizontal:"25%"
   },
   text:{
     fontSize: 14,
     color:'white',
     alignItems:'center',
     justifyContent:'center',
-    // paddingHorizontal:"25%"
   },
   head: {
     fontSize: 22,
     fontWeight: "bold",
     textDecorationLine:'underline'
-    //color:'white'
   },
   txt: {
     fontSize: 18,
-    // color: 'white',
   },
   img: {
     

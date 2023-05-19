@@ -7,7 +7,6 @@ import { useRouter } from "expo-router";
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  let colors = ['white', 'blue', 'red', 'yellow']
   const router = useRouter();
   const onPress = (item) => {
     router.setParams(item)
@@ -65,7 +64,7 @@ export default function Home() {
                   <Text numberOfLines={2}>{item.Plot}</Text>
                   <View style={styles.line}>
                     <Text>{item.Released}</Text>
-                    <Text>{item.imdbRating}</Text>
+                    <Text>⭐{item.imdbRating}</Text>
                     {/* <Text>{item.imdbRating}</Text> */}
                     <Text>{item.Runtime}</Text>
                   </View>
@@ -129,12 +128,3 @@ const styles = StyleSheet.create({
 
   }
 });
-/*<Image source={item.Images} style={{
-              width:200,
-              height:200,
-              borderWidth:2,
-              borderColor:'#000000',
-              resizeMode:'stretch',
-              margin:8
-            }}></Image>
-            {item.Year}, {item.Rated} {item.Released}, {item.Runtime}, {item.Genre}, {item.Director}, {item.Writer}, {item.Actors}, {item.Plot}, {item.Language}, {item.Country}, {item.Awards}, {item.Metascore}, {item.imdbRating}, {item.imdbVotes}, {item.imdbID}, {item.Type}, {item.totalSeasons}, {item.Response},*/
