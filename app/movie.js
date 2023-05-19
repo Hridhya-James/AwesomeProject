@@ -9,13 +9,13 @@ export default function movie() {
     console.log("fd", params)
     setTimeout(() => {
       onChangeitem(params)
-    }, 8000)
+    }, 2000)
 
   }, []);
   return (
-    <View style={{ flex: 1, backgroundColor: "#E100E1" }}>
+    <View style={{ flex: 1, backgroundColor: "#157DEC" }}>
       <ScrollView contentContainerStyle={{ flex: 1 }}>
-        <View style={{ backgroundColor: "#E100E1",flex:1,justifyContent:'center',alignContent:'center'}}>
+        <View style={{ backgroundColor: "#157DEC",flex:1,justifyContent:'center',alignContent:'center'}}>
           {/* {item} */}
           {(item) ?
             <View  style={styles.main}>

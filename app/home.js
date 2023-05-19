@@ -7,7 +7,6 @@ import { useRouter } from "expo-router";
 export default function Home() {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  let colors = ['white', 'blue', 'red', 'yellow']
   const router = useRouter();
   const onPress = (item) => {
     router.setParams(item)
